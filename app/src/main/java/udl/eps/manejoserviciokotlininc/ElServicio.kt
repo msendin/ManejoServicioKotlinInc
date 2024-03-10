@@ -33,4 +33,8 @@ class ElServicio: Service() {
         Toast.makeText(this, R.string.finaserv, Toast.LENGTH_LONG).show()
 
     }
+
+    override fun onUnbind(intent: Intent?): Boolean {
+        return super.onUnbind(intent)
+    }
 }
